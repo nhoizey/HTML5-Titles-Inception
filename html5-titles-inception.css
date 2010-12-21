@@ -1,0 +1,91 @@
+/* ===========================================================================
+ *
+ *               HTML Titles Inception: sectionned h* styles
+ *
+ *  How to style h1-h3 elements according to the number of sectioning
+ *  elements they are embeded into.
+ *
+ *  Author: Nicolas Hoizey ( http://gasteroprod.com/ )
+ *
+ *  Inspirations:
+ *    Paul Rouget's -moz-any selector tutorial: http://cas.im/moz-any-selector
+ *    Rob Reyes's 5 levels of Inception: http://cas.im/5-levels-inception
+ *
+ * =========================================================================== */
+
+
+/* ---------------------------------------------------------------------------
+ * Reality
+ *   Everything is real, h1 look like h1
+ * --------------------------------------------------------------------------- */
+
+h1 {
+  font-size: 3em;
+  line-height: 1;
+  margin-bottom: 0.5em;
+}
+
+/* ---------------------------------------------------------------------------
+ * Inception level 1: The city 
+ *   one level deep h1 look like h2
+ * --------------------------------------------------------------------------- */
+
+h2,
+section h1, article h1, aside h1, nav h1 {
+  font-size: 2em;
+  margin-bottom: 0.75em;
+}
+
+/* ---------------------------------------------------------------------------
+ * Inception level 2: The hotel
+ *   2 levels deep h1 and 1 level deep h2s look like h3
+ * --------------------------------------------------------------------------- */
+
+h3,
+section h2, article h2, aside h2, nav h2,
+section section h1, section article h1, section aside h1, section nav h1, article section h1, article article h1, article aside h1, article nav h1, aside section h1, aside article h1, aside aside h1, aside nav h1, nav section h1, nav article h1, nav aside h1, nav nav h1 {
+  font-size: 1.5em;
+  line-height: 1;
+  margin-bottom: 1em;
+}
+
+/* ---------------------------------------------------------------------------
+ * Inception level 3: The hospital
+ *   3 levels deep h1, 2 levels deep h2 and 1 level deep h3 look like h4
+ * --------------------------------------------------------------------------- */
+
+h4,
+
+section h3, article h3, aside h3, nav h3,
+
+section section h2, section article h2, section aside h2, section nav h2, article section h2, article article h2, article aside h2, article nav h2, aside section h2, aside article h2, aside aside h2, aside nav h2, nav section h2, nav article h2, nav aside h2, nav nav h2,
+
+section section section h1, section section article h1, section section aside h1, section section nav h1,
+section article section h1, section article article h1, section article aside h1, section article nav h1,
+section aside section h1, section aside article h1, section aside aside h1, section aside nav h1,
+section nav section h1, section nav article h1, section nav aside h1, section nav nav h1,
+
+article section section h1, article section article h1, article section aside h1, article section nav h1,
+article article section h1, article article article h1, article article aside h1, article article nav h1,
+article aside section h1, article aside article h1, article aside aside h1, article aside nav h1,
+article nav section h1, article nav article h1, article nav aside h1, article nav nav h1,
+
+aside section section h1, aside section article h1, aside section aside h1, aside section nav h1,
+aside article section h1, aside article article h1, aside article aside h1, aside article nav h1,
+aside aside section h1, aside aside article h1, aside aside aside h1, aside aside nav h1,
+aside nav section h1, aside nav article h1, aside nav aside h1, aside nav nav h1,
+
+nav section section h1, nav section article h1, nav section aside h1, nav section nav h1,
+nav article section h1, nav article article h1, nav article aside h1, nav article nav h1,
+nav aside section h1, nav aside article h1, nav aside aside h1, nav aside nav h1,
+nav nav section h1, nav nav article h1, nav nav aside h1, nav nav nav h1 {
+  font-size: 1.2em;
+  line-height: 1.25;
+  margin-bottom: 1.25em;
+}
+
+/* ---------------------------------------------------------------------------
+ * Inception level 4: Limbo
+ *   can't describe the stuff you would find here if you dare...
+ * --------------------------------------------------------------------------- */
+
