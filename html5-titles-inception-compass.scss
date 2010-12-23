@@ -1,0 +1,53 @@
+/* ===========================================================================
+ *
+ *       HTML Titles Inception: sectionned h* styles (the Compass/SCSS way)
+ *
+ *  How to style h1-h6 elements according to the number of sectioning
+ *  elements they are embeded into, using Compass's nested rules to generate
+ *  every possible combination.
+ *
+ *  Author: Mehdi Kabab ( http://pioupioum.fr/ )
+ *
+ *  Inspirations:
+ *    Nicolas Hoizey HTML5-Titles-Inception: http://github.com/nhoizey/HTML5-Titles-Inception
+ *    Paul Rouget's -moz-any selector tutorial: http://cas.im/moz-any-selector
+ *    Rob Reyes's 5 levels of Inception: http://cas.im/5-levels-inception
+ *    SCSS: http://sass-lang.com/
+ *    Compass: http://compass-style.org/
+ *
+ * =========================================================================== */
+
+/* ---------------------------------------------------------------------------
+ * Reality
+ *   Everything is real, h1 look like h1
+ *   (.h1, .h2, etc. classes are there for SCSS's nested rules)
+ * --------------------------------------------------------------------------- */
+h1, .h1 { font-size: 3em; line-height: 1; margin-bottom: 0.5em; }
+h2, .h2 { font-size: 2em; margin-bottom: 0.75em; }
+h3, .h3 { font-size: 1.5em; line-height: 1; margin-bottom: 1em; }
+h4, .h4 { font-size: 1.2em; line-height: 1.25; margin-bottom: 1.25em; }
+h5, .h5 { font-size: 1em; font-weight: bold; margin-bottom: 1.5em; }
+h6, .h6 { font-size: 1em; font-weight: bold; }
+
+$hotel: 2;
+$limbo: 6;
+$s: 'section, article, aside, nav';
+
+// Inception!
+@for $level from $hotel through $limbo {
+  $selector: #{$s};
+  $deep: $level - 1;
+
+  #{nest(#{$selector}, 'h#{$deep}')} {
+    @extend .h#{$level};
+  }
+  $deep: $deep - 1;
+
+  @while 0 < $deep {
+    $selector: #{nest(#{$selector}, #{$s})};
+    #{nest(#{$selector}, 'h#{$deep}')} {
+      @extend .h#{$level};
+    }
+    $deep: $deep - 1;
+  }
+}
