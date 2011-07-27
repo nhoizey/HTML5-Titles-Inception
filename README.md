@@ -21,7 +21,7 @@ Fortunately, tools such as [LESS](http://lesscss.org/) and [SASS](http://sass-la
 Disclaimer
 ==========
 
-*Be careful about performance through when using such complex selectors in your CSS.*
+**Be careful about performance through when using such complex selectors in your CSS.**
 
 Inspiration
 ===========
