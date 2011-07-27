@@ -8,7 +8,7 @@ Unfortunately, most browsers still don't have default CSS rendering for such mul
 
 This is where [HTML5 Titles Inception](https://github.com/nhoizey/HTML5-Titles-Inception) tries to help, with a (not so) little CSS that you can extend.
 
-It shows how to style ‘<h1>‘-‘<h3>‘ elements according to the number of sectioning elements they are embeded into.
+It shows how to style `<h1>`-`<h3>` elements according to the number of sectioning elements they are embeded into.
 
 Fortunately, tools such as [LESS](http://lesscss.org/) and [SASS](http://sass-lang.com/) exist, so that you don't have to put the whole CSS mess into your files.
 
