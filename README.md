@@ -1,3 +1,9 @@
+Disclaimers
+===========
+
+- It seems unfortunately [the HTML5 Document Outline is a dangerous fiction](http://blog.paciellogroup.com/2013/10/html5-document-outline/)
+- Be careful about performance through when using such complex selectors in your CSS.
+
 HTML5 Outlines pros & cons
 ==========================
 
@@ -7,21 +13,16 @@ From [HTML5Doctor's article about Outlines](http://html5doctor.com/outlines/) :
 
 It allows web developers to use only `<h1>`s in their content thanks to a hierarchy of sectioning element containing them. This is really useful with Content Management Systems that may generate the same HTML source for several usages.
 
+Unfortunately, most browsers still don't have default CSS rendering for such multi level `<h1>`s.
+
 HTML5 Titles Inception to the rescue
 ====================================
 
-Unfortunately, most browsers still don't have default CSS rendering for such multi level `<h1>`s.
-
-This is where [HTML5 Titles Inception](https://github.com/nhoizey/HTML5-Titles-Inception) tries to help, with a (not so) little CSS that you can extend.
+[HTML5 Titles Inception](https://github.com/nhoizey/HTML5-Titles-Inception) tries to help, with a (not so) little CSS that you can extend.
 
 It shows how to style `<h1>`-`<h3>` elements according to the number of sectioning elements they are embeded into.
 
 Fortunately, tools such as [LESS](http://lesscss.org/) and [SASS](http://sass-lang.com/) exist, so that you don't have to put the whole CSS mess into your files.
-
-Disclaimer
-==========
-
-**Be careful about performance through when using such complex selectors in your CSS.**
 
 Inspiration
 ===========
