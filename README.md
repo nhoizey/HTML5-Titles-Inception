@@ -27,4 +27,4 @@ Fortunately, tools such as [LESS](http://lesscss.org/) and [SASS](http://sass-la
 Inspiration
 ===========
 
-HTML5 Titles Inception is inspired by Paul Rouget's [-moz-any selector tutorial](http://cas.im/moz-any-selector) and  Rob Reyes's [5 levels of Inception](http://cas.im/5-levels-inception).
+HTML5 Titles Inception is inspired by Paul Rouget's [-moz-any selector tutorial](https://hacks.mozilla.org/2010/05/moz-any-selector-grouping/) and  Rob Reyes's [5 levels of Inception](http://www.giantfreakinrobot.com/scifi/5-levels-inception-infographic.html).
