@@ -1,7 +1,7 @@
 Disclaimers
 ===========
 
-- It seems unfortunately [the HTML5 Document Outline is a dangerous fiction](http://blog.paciellogroup.com/2013/10/html5-document-outline/)
+- It seems unfortunately [the HTML5 Document Outline is a dangerous fiction](http://blog.paciellogroup.com/2013/10/html5-document-outline/) .
 - Be careful about performance through when using such complex selectors in your CSS.
 
 HTML5 Outlines pros & cons
